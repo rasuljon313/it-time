@@ -129,7 +129,6 @@ const Input = ({ activ, setActiv }) => {
   );
 };
 
-// Add PropTypes validation
 Input.propTypes = {
   activ: PropTypes.bool.isRequired,
   setActiv: PropTypes.func.isRequired,

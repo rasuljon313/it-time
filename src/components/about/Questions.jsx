@@ -24,7 +24,7 @@ const Questions = () => {
     <>
       <div className="question">
         <div className="container">
-          <h2 className="question_title" data-aos="flip-up" data-aos-duration="1500">
+          <h2 className="question_title" data-aos="flip-up" >
             {t("most_questions")}
           </h2>
           <ul className="question_list">
@@ -72,7 +72,7 @@ const Questions = () => {
             </li>
           </ul>
 
-          <h2 className="question_bottom_title" data-aos="flip-up" data-aos-duration="1500">
+          <h2 className="question_bottom_title" data-aos="flip-up">
             {t("hamkorlarimiz")}
           </h2>
           <ul className="question_bottom_list">

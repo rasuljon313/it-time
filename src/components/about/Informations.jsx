@@ -97,14 +97,14 @@ const Informations = () => {
       <div className="informations">
         <div className="container">
           <div className="informations_box">
-            <h4 className="informations_box_title" data-aos="zoom-in-right" data-aos-duration="1000">
+            <h4 className="informations_box_title" data-aos="zoom-in-right">
               {t("choose")}
             </h4>
             <ul className="informations_box_list">
               {
                 obj?.map(item => (
                     <Link key={item.id} to={`/cours/${item.id}`}>
-                     <li className="informations_box_item" data-aos="zoom-in" data-aos-duration="1000" >
+                     <li className="informations_box_item" data-aos="zoom-in">
                     <div className="informations_box_img">
                       <img src={item.img.mob} alt={item.name} />
                     </div>

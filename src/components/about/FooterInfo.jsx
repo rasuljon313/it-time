@@ -62,7 +62,7 @@ const FooterInfo = () => {
                 </p>
               </div>
               <div className="footer_box">
-                <form id="myform" onSubmit={send} className="footer_box_form" data-aos="flip-left" data-aos-duration="1000">
+                <form id="myform" onSubmit={send} className="footer_box_form" data-aos="flip-left">
                   <input
                     className="footer_input"
                     type="text"

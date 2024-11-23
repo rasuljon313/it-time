@@ -49,8 +49,6 @@ const Nav = () => {
           </div>
         </div>
       </div>
-
-      {/* Render the Input component and pass activ state as a prop */}
       <Input activ={activ} setActiv={setActiv} />
     </div>
   );

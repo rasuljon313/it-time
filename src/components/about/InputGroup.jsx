@@ -56,7 +56,7 @@ const InputGroup = () => {
      <div className="inputGroup">
         <div className="container">
             <div className="inputGroup_card">
-            <div className="inputGroup_card_left" data-aos="zoom-in" data-aos-duration="1000">
+            <div className="inputGroup_card_left" data-aos="zoom-in">
                 <h2 className="inputGroup_card_left_title">
  {t("it_future")}
                 </h2>
@@ -68,7 +68,7 @@ const InputGroup = () => {
                     </div>
                 </div>
             </div>
-            <div className="inputGroup_card_right" data-aos="zoom-in" data-aos-duration="1000">
+            <div className="inputGroup_card_right" data-aos="zoom-in" >
                 <h2 className="inputGroup_card_right_title">{t("free")}</h2>
                 <p className="inputGroup_card_right_txt">
       {t("free_txt")}

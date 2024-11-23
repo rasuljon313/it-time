@@ -34,7 +34,7 @@ const Footerbottom = () => {
                         </NavLink>
                         </li>
                 </ul>
-                <div className="footerbottom_cards" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="1500">
+                <div className="footerbottom_cards" data-aos="flip-up" >
                  <span>
                     <a className="footerbottom_cards_tell"  href="tel:+998947820092" target="_blank" rel="noopener noreferrer">+998947820092</a>
                  </span>

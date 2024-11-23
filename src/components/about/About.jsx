@@ -53,8 +53,6 @@ const About = () => {
       <Questions />
       <FooterInfo />
       <Footerbottom />
-
-      {/* Input Modal */}
       <Input activ={input} setActiv={setInput} />
     </>
   );
