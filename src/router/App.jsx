@@ -7,6 +7,7 @@ import CousId from "../components/courses/CousId"
 import { useEffect } from "react"
 import Aos from "aos"
 import 'aos/dist/aos.css'
+import News from "../pages/News"
 
 const App = () => {
   useEffect(()=>{
@@ -24,6 +25,7 @@ const App = () => {
       <Route path='/info' element={<Info />} />
       <Route path='/cours' element={<Courses />} />
       <Route path='/cours/:id' element={<CousId />} />
+      <Route path='/new' element={<News/>} />
     </Route>
   </Routes>
 </BrowserRouter>

@@ -32,6 +32,9 @@ const Nav = () => {
             <NavLink to="/cours">
               <h4 className="nav_list_title">{t('courses')}</h4>
             </NavLink>
+            <NavLink to="/new">
+              <h4 className="nav_list_title">{t('news')}</h4>
+            </NavLink>
           </ul>
           
           <div className="btn">
