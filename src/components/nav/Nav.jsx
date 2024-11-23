@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";  // Import useState for managing modal visibility
-import Input from "../input/Input"; // Make sure the Input component is imported correctly
+import Input from "../input/Input";
+import Navlogo from "../../assets/images/navLogo.png" // Make sure the Input component is imported correctly
 
 const Nav = () => {
   const { t, i18n } = useTranslation();
@@ -23,7 +24,7 @@ const Nav = () => {
       <div className="container">
         <div className="nav_box">
           <NavLink to="/" className="nav_logo">
-            <img className="nav_logo_img" src="/src/assets/images/navLogo.png" alt="" />
+            <img className="nav_logo_img" src={Navlogo} alt="" />
             <h3 className="nav_logo_title">IT TIME <span>ACADEMY</span></h3>
           </NavLink>
           <ul className="nav_list">
