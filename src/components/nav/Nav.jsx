@@ -1,22 +1,20 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";  // Import useState for managing modal visibility
+import { useState } from "react";  
 import Input from "../input/Input";
-import Navlogo from "../../assets/images/navLogo.png" // Make sure the Input component is imported correctly
+import Navlogo from "../../assets/images/navLogo.png" 
 
 const Nav = () => {
   const { t, i18n } = useTranslation();
-  const [activ, setActiv] = useState(false);  // State for managing modal visibility
+  const [activ, setActiv] = useState(false); 
 
-  // Handle language change
   const handleChange = (event) => {
     const select = event.target.value;
     i18n.changeLanguage(select);
   };
 
-  // Toggle modal visibility when the nav button is clicked
   const handleButtonClick = () => {
-    setActiv(true);  // Set activ to true to show the modal
+    setActiv(true);  
   };
 
   return (
@@ -33,9 +31,6 @@ const Nav = () => {
             </NavLink>
             <NavLink to="/cours">
               <h4 className="nav_list_title">{t('courses')}</h4>
-            </NavLink>
-            <NavLink to="/new">
-              <h4 className="nav_list_title">{t('news')}</h4>
             </NavLink>
           </ul>
           
