@@ -1,0 +1,145 @@
+.obj{
+    &_cards{
+        @include media(1000){
+            width: 80% !important;
+    margin: 0 auto;
+        }
+    }
+    &_wrapper{
+        display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 30px 0;
+    @include media(1000){
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }
+    &_item1{
+        grid-column: 1 / 5;
+    width: 98%;
+    }
+    &_item2{
+        grid-column: span 2;
+    width: 90%;
+    margin: 0 auto;
+    @include media(1000){
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    @include media(350){
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    }
+    &_img{
+        border: 1px solid gray;
+    border-radius: 10px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+   border-radius: 10px;
+    }
+    }
+    &_info{
+        display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 1.5rem;
+    padding-bottom: 40px;
+    margin-top: 1.875rem;
+    margin-bottom: 2.125rem;
+    flex-wrap: wrap;
+    }
+    &_bottom{
+        font-size: var(--font_24);
+        margin-bottom: 25px;
+    }
+    &_title{
+        font-size: var(--font_42);
+        margin:50px 0 30px 0 ;
+    }
+    &_price{
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 20px 20px 50px;
+        margin-bottom: 30px;
+        p{
+            font-size: var(--font_20);
+            color: var(--color_red);
+            margin-bottom:25px;
+        }
+    }
+    &_payment{
+        padding-bottom: 30px;
+        border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px 20px 50px;
+    margin-bottom: 30px;
+     p{
+        color: var(--color_red);
+        font-size: var(--font_20);
+        margin-bottom: 25px;
+     }
+     button{
+        display: block;
+        background: #ff8a66;
+        border-radius: 10px;
+        color: #fff;
+        padding: 8px;
+        border: 2px solid #FF8A66;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        transition: all .3s ease;
+        width: 100%;
+        font-family: var(--main-font);
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+     }
+     span{
+        display: flex;
+    justify-content: center;
+    font-family: var(--main-ff);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #7e8ca0;
+    cursor: pointer;
+     }
+     
+    }
+    &_courses{
+        padding-bottom: 8px;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px 20px 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    a{
+        width: 100%;
+        height: 100%;
+        p{
+            font-size: var(--font_20);
+            color: #000;
+            margin-top: 30px;
+                }
+    }
+        img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+        }
+       
+    }

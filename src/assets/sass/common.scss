@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: unset;
+    cursor: pointer;
+}
+input{
+    border: none;
+    outline: none;
+}
+:root{
+    --color_red:rgb(198, 2, 5);
+    --header_bg: #f5f7f9;
+    --btn_bg:linear-gradient(278.99deg, #f41010 30.32%, #c60205);
+    --color_txt:#5b6871;
+}
+:root{
+    --font_50:50px;
+    --font_46:46px;
+    --font_42:42px;
+    --font_38:38px;
+    --font_36:36px;
+    --font_32:32px;
+    --font_28:28px;
+    --font_24:24px;
+    --font_20:20px;
+    --font_16:16px;
+    --font_14:14px;
+    --font_12:12px;
+}

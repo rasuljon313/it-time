@@ -1,0 +1,330 @@
+
+// // .first{
+// // display: none;
+// //     &.activ{
+// //         width: 100%;
+// //   min-height: 100vh;
+// //   position: absolute;
+// //   top: 0;
+// //   left: 0;
+// //   position: fixed;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   background: rgba(0, 0, 0, 0.45);
+// //   transform-origin: -276px 267px;
+// //   &_box{
+// //     position: relative;
+// //     background: #FFF;
+// //     border-radius: 8px;
+// //     pointer-events: auto;
+// //     padding: 20px 24px;
+// //     width: 520px;
+// //     &_icon{
+// //         position: absolute;
+// //         top: 12px;
+// //         right: 12px;
+// //         width: 25px;
+// //         height: 25px;
+// //         color: gray;
+// //         cursor: pointer;
+// //         transition: 0.4s;
+// //         padding: 3px;
+// //         &:hover{
+// //             background-color: #eeeeee;
+// //             border-radius: 3px;
+// //         }
+// //     }
+// //   }
+// //   &_card {
+// //     display: grid;
+// //     grid-template-columns: 1fr 1fr;
+// //     gap: 8px 10px;
+// //   }
+// //   &_txt{
+// //     padding: 20px 0;
+// //     font-size: var(--font_20);
+// //   }
+// //   &_name{
+// //     outline: none;
+// //     grid-column: 1 / 3;
+// //     border: .71px solid rgb(155, 155, 155);
+// //     width: 100%;
+// //     border-radius: 4px;
+// //     padding: 10px 0 10px 15px;
+// //     font-size: 17px;
+// //   }
+// //   &_select{
+// // border: 1px solid gray !important;
+// //     height: 40px;
+// //     padding: 0 10px;
+// //     cursor: pointer;
+// //     outline: none; 
+// //     grid-column: 1 / 3;
+// //     width: 100%;
+// //     border-radius: 4px;
+// //     font-size: 17px;
+// //     border: none;
+// //     background-color: #fff;
+// //     color: #000;
+// //   }
+// //   &_tell{
+// //     outline: none;
+// //     grid-column: 1 / 3;
+// //     border: .71px solid rgb(155, 155, 155);
+// //     width: 100%;
+// //     border-radius: 4px;
+// //     padding: 10px 0 10px 15px;
+// //     font-size: 17px;
+// //   }
+// //   &_btn{
+// //     grid-column: 1 / 3;
+// //     border-radius: 4px;
+// //     border: none;
+// //     font-family: var(--main-font);
+// //     font-size: 17px;
+// //     font-weight: 400;
+// //     width: 100%;
+// //     line-height: 20px;
+// //     letter-spacing: .705918px;
+// //     color: #fff;
+// //     background: linear-gradient(278.99deg, #ff0202 19.32%, #a50305 105%);
+// //     padding: 10px;
+// //     transition: all .1s ease 0s;
+// //     cursor: pointer;
+// //   }
+// //     }
+
+// // }
+
+
+
+// .first.activ {
+//     display: flex;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     min-height: 100vh;
+//     background: rgba(0, 0, 0, 0.45);
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 1000;  // Ensure the modal is above other content
+//   }
+  
+
+// .first {
+//     display: none; // Initially hidden
+  
+//     &.activ {
+//       width: 100%;
+//       min-height: 100vh;
+//       position: fixed; /* Use only fixed positioning for full-screen modal */
+//       top: 0;
+//       left: 0;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       background: rgba(0, 0, 0, 0.45); /* Dark background */
+//       z-index: 9999; /* Ensure it appears on top of other content */
+//       transform-origin: center;
+//       opacity: 0;
+//       transform: scale(0.8);
+//       transition: opacity 0.4s ease, transform 0.4s ease; /* Fade in and scale up */
+  
+//       &_box {
+//         position: relative;
+//         background: #FFF;
+//         border-radius: 8px;
+//         pointer-events: auto;
+//         padding: 20px 24px;
+//         width: 520px;
+        
+//         &_icon {
+//           position: absolute;
+//           top: 12px;
+//           right: 12px;
+//           width: 25px;
+//           height: 25px;
+//           color: gray;
+//           cursor: pointer;
+//           transition: 0.4s;
+//           padding: 3px;
+          
+//           &:hover {
+//             background-color: #eeeeee;
+//             border-radius: 3px;
+//           }
+//         }
+//       }
+  
+//       &_card {
+//         display: grid;
+//         grid-template-columns: 1fr; /* Adjust to 1 column layout */
+//         gap: 8px 10px;
+//       }
+  
+//       &_txt {
+//         padding: 20px 0;
+//         font-size: var(--font_20);
+//       }
+  
+//       &_name, &_tell, &_select {
+//         outline: none;
+//         border: 0.71px solid rgb(155, 155, 155);
+//         border-radius: 4px;
+//         padding: 10px 0 10px 15px;
+//         font-size: 17px;
+//         width: 100%;
+//       }
+  
+//       &_name {
+//         grid-column: 1;
+//       }
+  
+//       &_select {
+//         height: 40px;
+//         padding: 0 10px;
+//         cursor: pointer;
+//         grid-column: 1;
+//         background-color: #fff;
+//         color: #000;
+//       }
+  
+//       &_tell {
+//         grid-column: 1;
+//       }
+  
+//       &_btn {
+//         grid-column: 1;
+//         border-radius: 4px;
+//         border: none;
+//         font-family: var(--main-font);
+//         font-size: 17px;
+//         font-weight: 400;
+//         width: 100%;
+//         line-height: 20px;
+//         letter-spacing: 0.705918px;
+//         color: #fff;
+//         background: linear-gradient(278.99deg, #ff0202 19.32%, #a50305 105%);
+//         padding: 10px;
+//         transition: all 0.1s ease;
+//         cursor: pointer;
+        
+//         &:hover {
+//           background: linear-gradient(278.99deg, #a50305 19.32%, #ff0202 105%);
+//         }
+//       }
+//     }
+//   }
+  
+.first {
+    display: flex; /* Keep display as flex so it works with position fixed */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    position: fixed; /* Full-screen modal positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.45); /* Dark background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears on top of other content */
+    transform-origin: center;
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s 0.4s; /* Fade and scale transitions, with delay for visibility */
+  
+    &.activ {
+      visibility: visible; /* Show the modal */
+      opacity: 1; /* Fully opaque */
+      transform: scale(1); /* Fully scaled */
+      transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth fade-in and scaling */
+    }
+  
+    &_box {
+      position: relative;
+      background: #fff;
+      border-radius: 8px;
+      pointer-events: auto;
+      padding: 20px 24px;
+      width: 520px;
+  
+      &_icon {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 25px;
+        height: 25px;
+        color: gray;
+        cursor: pointer;
+        transition: 0.4s;
+        padding: 3px;
+  
+        &:hover {
+          background-color: #eeeeee;
+          border-radius: 3px;
+        }
+      }
+    }
+  
+    &_card {
+      display: grid;
+      grid-template-columns: 1fr; /* Adjust to 1 column layout */
+      gap: 8px 10px;
+    }
+  
+    &_txt {
+      padding: 20px 0;
+      font-size: var(--font_20);
+    }
+  
+    &_name,
+    &_tell,
+    &_select {
+      outline: none;
+      border: 0.71px solid rgb(155, 155, 155);
+      border-radius: 4px;
+      padding: 10px 0 10px 15px;
+      font-size: 17px;
+      width: 100%;
+    }
+  
+    &_name {
+      grid-column: 1;
+    }
+  
+    &_select {
+      height: 40px;
+      padding: 0 10px;
+      cursor: pointer;
+      grid-column: 1;
+      background-color: #fff;
+      color: #000;
+    }
+  
+    &_tell {
+      grid-column: 1;
+    }
+  
+    &_btn {
+      grid-column: 1;
+      border-radius: 4px;
+      border: none;
+      font-family: var(--main-font);
+      font-size: 17px;
+      font-weight: 400;
+      width: 100%;
+      line-height: 20px;
+      letter-spacing: 0.705918px;
+      color: #fff;
+      background: linear-gradient(278.99deg, #ff0202 19.32%, #a50305 105%);
+      padding: 10px;
+      transition: all 0.1s ease;
+      cursor: pointer;
+  
+      &:hover {
+        background: linear-gradient(278.99deg, #a50305 19.32%, #ff0202 105%);
+      }
+    }
+  }
+  

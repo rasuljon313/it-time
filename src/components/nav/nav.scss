@@ -1,0 +1,91 @@
+.nav{
+    padding: 20px 0 ;
+    border-bottom: 1px solid #000;
+    &_box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_logo{
+        width: 150px;
+height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &_img{
+        width: 50px;
+        height: 45px;
+        @include media(925){
+            width: 40px;
+            height: 40px;
+        }
+        }
+        &_title{
+            font-size: 16px;
+            font-weight:700;
+            color: #000;
+            @include media(925){
+                font-size: var(--font_14);
+            }
+        }
+        span{
+            color: var(--color_red);
+        }
+    }
+    &_list{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        @include media(800){
+            gap: 25px;
+        }
+        @include media(700){
+            display: none;
+          }
+        &_title{
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Montserrat";
+            cursor: pointer;
+            transition: 0.4s;
+            @include media(925){
+                font-size: var(--font_16);
+            }
+            @include media(800){
+                font-size: var(--font_12);
+            }
+         &:hover{
+          transform: scale(0.95);
+         }
+        }
+    }
+    &_btn{
+        background: var(--btn_bg);
+      padding: 12px 20px;
+      border-radius: 50px;
+      color: #fff;
+      font-weight: 400;
+      transition: 0.4s;
+      @include media(800){
+        padding: 12px 16px;
+        font-size: var(--font_12);
+      }
+      &:hover{
+        box-shadow: 0 0 10px rgba(220, 38, 38, 0.7);
+        transform: scale(0.95);
+      }
+    //   @include media(700){
+    //     display: none;
+    //   }
+    }
+
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include media(700){
+        display: none;
+      }
+}
