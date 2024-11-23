@@ -11,7 +11,7 @@ const Courses = () => {
   return (
 
        <>
-      <div className="informations">
+      <div className="informations">ygcfy
         <div className="container">
           <div className="informations_box">
             <h4 className="informations_box_title" data-aos="zoom-in-right" data-aos-duration="1000">
