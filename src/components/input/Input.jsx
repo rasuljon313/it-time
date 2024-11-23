@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import axios from "axios";
+import PropTypes from "prop-types";
 
 const Input = ({ activ, setActiv }) => {
   const [formState, setFormState] = useState({
     name: "",
     phone: "+998 ",
-    chose: "", // Add 'chose' to the initial state
+    chose: "", 
   });
 
-  // Handle form field changes
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormState({
@@ -18,7 +19,6 @@ const Input = ({ activ, setActiv }) => {
     });
   };
 
-  // Send the form data (reset the form after submission)
   const send = (event) => {
     event.preventDefault();
 
@@ -38,13 +38,12 @@ const Input = ({ activ, setActiv }) => {
       },
     })
       .then(() => {
-        // Reset form after successful submission
         setFormState({
           name: "",
           phone: "+998 ",
           chose: "",
         });
-        // Optionally close the modal after submission
+
         setActiv(false);
       })
       .catch((error) => {
@@ -61,13 +60,13 @@ const Input = ({ activ, setActiv }) => {
       <div className="first_box">
         <IoCloseOutline
           className="first_box_icon"
-          onClick={() => setActiv(false)} // Close the modal when clicked
+          onClick={() => setActiv(false)} 
         />
-        <h2 className="first_title">Kursga yozilish uchun formani to'ldiring</h2>
+        <h2 className="first_title">{`Kursga yozilish uchun formani to'ldiring`}</h2>
         <p className="first_txt">
-          Agar kurs haqida savollaringiz bo'lsa yoki tanlashni bilmasangiz,
+          {`Agar kurs haqida savollaringiz bo'lsa yoki tanlashni bilmasangiz,
           raqamingizni qoldiring va bizning operatorlarimiz sizga qo'ng'iroq
-          qilishadi.
+          qilishadi.`}
         </p>
         <div className="first_card">
           <input
@@ -130,4 +129,11 @@ const Input = ({ activ, setActiv }) => {
   );
 };
 
+// Add PropTypes validation
+Input.propTypes = {
+  activ: PropTypes.bool.isRequired,
+  setActiv: PropTypes.func.isRequired,
+};
+
 export default Input;
+
