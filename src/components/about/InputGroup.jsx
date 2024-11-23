@@ -2,7 +2,9 @@ import { useState } from "react"
 import axios from "axios"
 import { useTranslation } from "react-i18next";
 import MentorSwiper from "./Swiper";
-
+import img1 from "../../assets/images/banner.png"
+import img2 from "../../assets/images/u2.png"
+import img3 from "../../assets/images/u3.png"
 
 const InputGroup = () => {
     
@@ -60,9 +62,9 @@ const InputGroup = () => {
                 </h2>
                 <div className="inputGroup_card_imgs">
                 <div className="inputGroup_card_img">
-                    <img src="/src/assets/images/banner.png" alt="" />
-                    <img src="/src/assets/images/u2.png"alt="" />
-                    <img src="/src/assets/images/u3.png" alt="" />
+                    <img src={img1} alt="" />
+                    <img src={img2} alt="" />
+                    <img src={img3} alt="" />
                     </div>
                 </div>
             </div>
