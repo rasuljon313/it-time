@@ -1,6 +1,4 @@
-import AOS from "aos"
-import "aos/dist/aos.css"
-import { useEffect } from "react"
+
 import { useTranslation } from "react-i18next"
 import first from "../../assets/images/firstimg.png"
 import second from "../../assets/images/Untitled 4.png"
@@ -10,9 +8,7 @@ import five from "../../assets/images/Untitled 6.png"
 import six from "../../assets/images/Untitled 7.png"
 
 const Explain = () => {
-  useEffect(()=>{
-    AOS.init();
-  }, [])
+
   const { t } = useTranslation();
 
   return (

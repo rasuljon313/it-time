@@ -4,8 +4,18 @@ import HomeLayaut from "../pages/HomeLayaut"
 import Home from "../pages/Home"
 import Info from "../pages/info"
 import CousId from "../components/courses/CousId"
+import { useEffect } from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 const App = () => {
+  useEffect(()=>{
+    Aos.init({
+      duration: 1000,
+      offset: 50,
+      easing: 'ease-in-out'
+    })
+  },[])
   return (
 <BrowserRouter>
   <Routes>

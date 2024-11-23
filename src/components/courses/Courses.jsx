@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
       
 import { useTranslation } from "react-i18next";
 import { obj } from "./Data";
+import i18next from "i18next";
 const Courses = () => {
   const { t } = useTranslation(); 
   
@@ -28,7 +29,10 @@ const Courses = () => {
                       <p className="informations_card_name">{item.name}</p>
                       <div className="informations_card_price">
                         <span>{t("cost")}</span>
-                        <p>{item?.price}</p>
+                        <p>
+                        {item?.price}
+                        {i18next.language === 'uz' ? "So'm": i18next.language === 'eng' ? "Eng":"Ru" }
+                          </p>
                       </div>
                       <div className="informations_card_times">
                         <img src={clock} alt="clock" />
