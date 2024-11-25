@@ -74,6 +74,13 @@ const Nav = () => {
           <h4 className="menu_title">{t('news')}</h4>
         </NavLink>
         </ul>
+        <div className="menu_btn">
+            <select name="Lang" id="Lang" onChange={handleChange} aria-label="Select language">
+              <option value="uz">Uzbek</option>
+              <option value="eng">English</option>
+              <option value="ru">Russian</option>
+            </select>
+          </div>
       </div>
 </div>
       
