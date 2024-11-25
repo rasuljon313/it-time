@@ -16,6 +16,9 @@
     &_item1{
         grid-column: 1 / 5;
     width: 98%;
+   p{
+    margin-bottom: 15px;
+   }
     }
     &_item2{
         grid-column: span 2;
