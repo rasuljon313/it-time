@@ -104,7 +104,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Navigation, Pagination } from 'swiper/modules';
 import { useTranslation } from "react-i18next";
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 const MentorSwiper = () => { 
   const { t } = useTranslation();
     const mentors = [
