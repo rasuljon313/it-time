@@ -1,8 +1,11 @@
 import { useState } from "react";
-import zamon from "../../assets/images/zamon-BYziiA9T.svg"
-import loyal from "../../assets/images/loyal-T6wEGNwi.png"
-import auto from "../../assets/images/autozom-CM99tOti.svg"
-import itblim from "../../assets/images/itbilim-b7lKQeqw.jpg"
+import zamon from "../../assets/images/zamon.png"
+import human from "../../assets/images/human.png"
+import auto from "../../assets/images/auto.png"
+import home from "../../assets/images/home.png"
+import build from "../../assets/images/build.png"
+import fff from "../../assets/images/fff.png"
+import dizinfeksiya from "../../assets/images/dizinfeksiya.png"
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -84,30 +87,55 @@ const Questions = () => {
           disableOnInteraction: false,
         }}
           modules={[Autoplay]} 
-          spaceBetween={20}  
-          slidesPerView={3}  
-          className="mySwiper w-full h-full"
+          slidesPerView={3} 
+          breakpoints={{
+            750: {
+              slidesPerView: 3, 
+            },
+            300:{
+              slidesPerView: 1, 
+            }
+
+          }}
+          className="swiper_card"
         > 
-        <SwiperSlide>
+             <div className="swiper_wrapper wrapper">
+             <SwiperSlide className="partners" >
         <a href="https://zamontour.uz/" className="question_bottom_item">
                <img src={zamon} alt="" />
              </a>
-        </SwiperSlide>
-             <SwiperSlide>
+             </SwiperSlide>
+             <SwiperSlide className="partners">
              <a href="https://www.uzloyal.uz/" className="question_bottom_item">
-               <img src={loyal} alt="" />
+               <img src={fff} alt="" />
              </a>
              </SwiperSlide>
-             <SwiperSlide>
+             <SwiperSlide className="partners">
              <a href="https://autozoomrental.com/" className="question_bottom_item">
                <img src={auto} alt="" />
              </a>
              </SwiperSlide>
-             <SwiperSlide>
-             <a href="https://it-bilim.uz/" className="question_bottom_item">
-               <img src={itblim} alt="" />
+             <SwiperSlide className="partners">
+             <a href="https://www.homekit.uz/" className="question_bottom_item">
+               <img src={home} alt="" />
              </a>
              </SwiperSlide>
+             <SwiperSlide className="partners">
+             <a href="https://www.dezinfeksiyatashkent.uz/" className="question_bottom_item">
+               <img src={dizinfeksiya} alt="" />
+             </a>
+             </SwiperSlide>
+             <SwiperSlide className="partners">
+             <a href="https://www.ataevbahodirbuild.uz/" className="question_bottom_item">
+               <img src={build} alt="" />
+             </a>
+             </SwiperSlide>
+             <SwiperSlide className="partners">
+             <a href="https://www.homekit.uz/" className="question_bottom_item">
+               <img src={human} alt="" />
+             </a>
+             </SwiperSlide>
+             </div>
              
              </Swiper>
           </ul>
