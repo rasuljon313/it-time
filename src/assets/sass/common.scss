@@ -35,6 +35,7 @@ input{
   }
   .swiper-wrapper {
     padding: 20px 0;
+    height: 300px !important;
   }
   .swiper-slide {
     border: 1px solid red;
@@ -44,6 +45,25 @@ input{
     justify-content: center;
     padding: 20px 20px 30px 20px;
     max-height: 205px;
+  }
+  .swiper-pagination {
+    position: absolute !important;
+    bottom: 23% !important;
+    &-bullet-active{
+        background-color: #1f2937 !important;
+    }
+  }
+  .swiper-button-prev{
+   position: absolute !important;
+   top: 300px !important;
+   left: 25% !important;
+   color: var(--color_red) !important;
+  }
+  .swiper-button-next{
+   position: absolute !important;
+   top: 300px !important;
+   right: 25% !important;
+   color: var(--color_red) !important;
   }
   .mentor-card {
     display: flex;

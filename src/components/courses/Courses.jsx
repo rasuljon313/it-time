@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { obj } from "./Data";
 import i18next from "i18next";
+import { FaStar } from "react-icons/fa";
+import Footerbottom from "../about/Footerbottom";
 const Courses = () => {
   const { t } = useTranslation(); 
-  
-
   return (
 
        <>
-      <div className="informations">ygcfy
+      <div className="informations">
         <div className="container">
           <div className="informations_box">
             <h4 className="informations_box_title" data-aos="zoom-in-right">
@@ -24,6 +24,10 @@ const Courses = () => {
                      <li className="informations_box_item" data-aos="zoom-in">
                     <div className="informations_box_img">
                       <img src={item.img.mob} alt={item.name} />
+                      <div className="informations_box_payment">
+                      <FaStar className="star" />
+                      <span>{t("muddatli_tolov")}</span>
+                      </div>
                     </div>
                     <div className="informations_card">
                       <p className="informations_card_name">{item.name}</p>
@@ -47,6 +51,7 @@ const Courses = () => {
           </div>
         </div>
       </div>
+      <Footerbottom/>
     </>
 
 

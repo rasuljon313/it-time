@@ -1,0 +1,116 @@
+.homeinfo{
+    &_title{
+        font-size: 40px;
+        padding: 13px 0 28px;
+        font-weight: 700;
+        color: #000929;
+        @include media(550){
+            font-size: 20px;
+        }
+    }
+    img{
+        width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 1px 3px #0000001a, 0 1px 2px -1px #0000001a;
+    margin-bottom: 30px;
+    }
+    &_content{
+        border: 1px solid #EEEEEE;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 40px 24px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px #0000001a, 0 1px 2px -1px #0000001a;
+     h3{
+        font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000929;
+    margin-bottom: 24px;
+     }
+     &_articl{
+        p{
+        line-height: 25px;
+        }
+     }
+     &_list{
+        padding-left: 16px;
+        li {
+            line-height: 25px; /* Adjusts the line height */
+        }
+        
+        li::marker {
+            content: "•"; 
+            color: #000; 
+            font-size: 30px;
+        }
+     }
+}
+&_about_contact{
+    margin-top: 24px;
+    h4{
+        font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000929;
+    margin-bottom: 16px;
+    }
+    &_items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_phone{
+        border: 1px solid #DCE1E7;
+    border-radius: 10px;
+    padding: .5rem .75rem .5rem 2.75rem;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000929;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    img{
+        position: absolute;
+        left: 12px;
+    }
+    }
+    &_location{
+        border: 1px solid #DCE1E7;
+    border-radius: 10px;
+    padding: .5rem .75rem .5rem 2.75rem;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000929;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    img{
+        position: absolute;
+        left: 12px;
+    }
+    }
+    &_site{
+        border: 1px solid #DCE1E7;
+        border-radius: 10px;
+        padding: .5rem .75rem .5rem 2.75rem;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: #000;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        position: relative;
+        a{
+            color: #000;
+        }
+   img{
+    position: absolute;
+    left: 12px;
+   }
+    }
+}
+}

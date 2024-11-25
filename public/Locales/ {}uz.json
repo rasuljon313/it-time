@@ -28,7 +28,6 @@
     "month":"oy",
     "sum":"sumdan",
     "cost":"narxi",
-
     "language":"Talim tili",
     "which_lan":"O'zbekcha",
     "murakkablik":"Murakkablik",
@@ -39,7 +38,6 @@
     "kurs_hqida":"Kurs tavsifi",
     "kurs_narxi":"Kurs narxi",
     "tolov_shartlar":"Muddatli tolov shartlari",
-
     "it_future":"IT - bu kelajak, zamonaviy kasblardan birini IT Time Academy bilan tajribali ustozlardan o'rganing!",
     "free_txt":"Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va barcha savollaringizga javob beramiz!",
     "name":"ismingiz",
@@ -73,7 +71,30 @@
     "kursni_tanlang":"Kursni tanlang",
     "kursga_yozilish":"Kursga yozilish",
     "show":"Barcha kurslarni koris",
-    "booking":"Bepul darsga yozilish"
+    "booking":"Bepul darsga yozilish",
+    "taqdirlash":"O'quvchilarni taqdirlash",
+    "xulosa":"Imtihonlardan yaxshi natijalarga erishgan o'quvchilarni taqdirlash va ularga tashakkurnomalar berildi. Bundan tashqari o'quvchilar bilan individual suhbatlar tashkil qilindi.",
+    "game":"O'quvchilarni o'rtasida futbol",
+    "footbal":"Yakshanba kuni markazimiz o'quvhilari o'rtasida futbol musobaqasi bo'lib o'tadi. Barchani ushbu o'yinga chorlaymiz.",
+    
+    
+    "malumot":"O'quv markazi haqida ma'lumot",
+    "oquv_markazi":"O'quv markazi haqida ma'lumot",
+    "boglaning":"Biz bilan boglanish",
+    "location":"Toshkent shahri, Yunusobod tumani, Amir Temur ko'chasi, 100-uy",
+    "it1":"IT Time Akademiyasida tajribali ustozlardan sifatli ta’lim oling!",
+   "it2":"Biz talabalarimizga nafaqat kelajakdagi ishlarida yordam beradigan, balki ularning kasbiy va martabaviy o'sishiga hissa qo'shadigan bilimlarni berishga intilamiz",
+    "it3":"Biz amaliyot bilan o'rgansangiz natijaga chiqishingizga ishonamiz, shuning uchun kurs bilimingizni mustahkamlash uchun amaliy mashg‘ulotlar va loyihalarni ham o‘z ichiga oladi. Kursdan so’ng qo’shimcha 2oylik jamoaviy amaliyot darslari bo’ladi. Chet el saytlaridan proyekt olish o'rgatiladi, ishga joylashishda yordam beriladi va intervyuga tayyorlaniladi, yaxshi bitiruvchilarni kompaniyaga ishga olinadi",
+    
+    "wifi":"Bepul wifi",
+    "proekt":"Real Proyektlar",
+    "koworking":"Kovorking markazi va undan bepul foydalanish;",
+    "oquvchilar":"O'quvchilar uchun tanlovlar va master-klasslar;",
+    "doimiy_ustoz":"Doimiy ustoz yordami va texnik qo'llab - quvvatlash;",
+    "sertificat":"Kurs so'ngida rasmiy sertifikat va portfolio;",
+    "quality":"O'rganish uchun barcha qulay sharoit.",
+    "darslar_yoziladi":"Darslar yozib olinadi va telegram guruhga tashlab boriladi.",
+    "ishga":"Ishga joylashishda tavsiyalar va yordam"
 
 
 }

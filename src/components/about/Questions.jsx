@@ -86,7 +86,7 @@ const Questions = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-          modules={[Autoplay]} 
+          // modules={[Autoplay]} 
           slidesPerView={3} 
           breakpoints={{
             750: {

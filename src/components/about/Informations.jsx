@@ -106,12 +106,12 @@ const Informations = () => {
                 obj?.map(item => (
                     <Link key={item.id} to={`/cours/${item.id}`}>
                      <li className="informations_box_item" data-aos="zoom-in">
+                    <div className="informations_box_img">
+                      <img src={item.img.mob} alt={item.name} />
                       <div className="informations_box_payment">
                       <FaStar className="star" />
                       <span>{t("muddatli_tolov")}</span>
                       </div>
-                    <div className="informations_box_img">
-                      <img src={item.img.mob} alt={item.name} />
                     </div>
                     <div className="informations_card">
                       <p className="informations_card_name">{item.name}</p>

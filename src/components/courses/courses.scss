@@ -12,6 +12,9 @@
     @include media(1000){
         grid-template-columns: repeat(1, 1fr);
     }
+    @include media(500){
+        gap: unset;
+    }
     }
     &_item1{
         grid-column: 1 / 5;
@@ -66,6 +69,10 @@
     &_title{
         font-size: var(--font_42);
         margin:50px 0 30px 0 ;
+        @include media(500){
+   font-size: 30px;
+   margin: 25px 0 15px 0 ;
+        }
     }
     &_price{
         border: 1px solid gray;
