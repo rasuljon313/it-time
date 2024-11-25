@@ -39,7 +39,7 @@ height: 100%;
         @include media(800){
             gap: 25px;
         }
-        @include media(700){
+        @include media(900){
             display: none;
           }
         &_title{
@@ -85,7 +85,7 @@ height: 100%;
     display: flex;
     align-items: center;
     gap: 20px;
-    @include media(700){
+    @include media(900){
         display: none;
       }
 }

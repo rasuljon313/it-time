@@ -94,77 +94,78 @@
 
 
 import img1 from "../../assets/images/Islom-BAT4FK3F.png"; 
-// import img2 from "../../assets/images/Mohlaroyim-CeTYveWN.jpg"; 
-// import img3 from "../../assets/images/Gulbahor-Coefen8F.jpg"; 
-// import img4 from "../../assets/images/Marjonabonu-BjBuqYeK.jpg"; 
-// import img5 from "../../assets/images/aziza.jpg"; 
+import img2 from "../../assets/images/Mohlaroyim-CeTYveWN.jpg"; 
+import img3 from "../../assets/images/Gulbahor-Coefen8F.jpg"; 
+import img4 from "../../assets/images/Marjonabonu-BjBuqYeK.jpg"; 
+import img5 from "../../assets/images/aziza.jpg"; 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import {Navigation, Pagination } from 'swiper/modules';
+import { useTranslation } from "react-i18next";
 const MentorSwiper = () => { 
+  const { t } = useTranslation();
     const mentors = [
       {
         name: "Raxmatjanov Islombek",
-        role: "Frontend dasturchi",
-        experience: "Tajribasi—1,5 yil, Til bo'yicha daraja—rus tili B1",
-        education: "Qo'shimcha ma'lumotlar—talaba(TATU 4-kurs)",
+        role: `${t("ho1")}`,
+        experience: `${t("ho_txt1")}`,
         image:img1
       },
       {
         name: "Komiljonova Mohlaroyim",
-        role: "Arab tili o'qituvchisi",
-        experience: "Tajribasi—2 yil, Til bo'yicha daraja–Arab tili B2",
-        education: "Qo'shimcha ma'lumotlar (Islom institutida talaba)",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
+        role: `${t("ho2")}`,
+        experience: `${t("ho_txt2")}`,
+        image: img2
       },
       {
         name: "G'ofurova Gulbahor",
-        role: "Grafik dizayner",
-        experience: "Tajribasi—4 yil, Til bo'yicha daraja—B1(rus tili)",
-        education: "Qo'shimcha ma'lumot—talaba(Moliya 3-kurs)",
-        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop"
+        role: `${t("ho3")}`,
+        experience: `${t("ho_txt3")}`,
+        image: img3
       },
       {
         name: "Aliyev Jamshid",
-        role: "Backend dasturchi",
-        experience: "Tajribasi—3 yil, Til bo'yicha daraja—ingliz tili B2",
-        education: "Qo'shimcha ma'lumot—Software Engineer at Tech Solutions",
-        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+        role: `${t("ho4")}`,
+        experience: `${t("ho_txt4")}`,
+  image:img4
+     
       },
       {
         name: "Karimova Nilufar",
-        role: "UI/UX dizayner",
-        experience: "Tajribasi—2.5 yil, Til bo'yicha daraja—ingliz tili B1",
-        education: "Qo'shimcha ma'lumot—talaba(INHA universiteti 3-kurs)",
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop"
+        role: `${t("ho5")}`,
+        experience: `${t("ho_txt5")}` ,
+        image: img5
       }
     ];
 
     return (
       <section className="mentors">
-        <div className="mentors__container">
+        <div className="container">
           <h2 className="mentors__title">Bizning mentorlar</h2>
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Pagination]}
             spaceBetween={30}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
             breakpoints={{
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+              1200: {
+                slidesPerView: 3, 
+                spaceBetween: 30, 
               },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+              1050: {
+                slidesPerView: 3, 
+                spaceBetween: 30, 
+              },
+              1000: {
+                slidesPerView: 3, 
+                spaceBetween: 30, 
+              },
+              750: {
+                slidesPerView: 2, 
               }
             }}
             className="mentors__swiper"
@@ -174,14 +175,13 @@ const MentorSwiper = () => {
                 <div className="mentor-card">
                   <div className="mentor-card__image">
                     <img src={mentor.image} alt={mentor.name} />
-                  </div>
-                  <div className="mentor-card__content">
+                    <div className="mentor-card__details">
                     <h3>{mentor.name}</h3>
                     <p className="mentor-card__role">{mentor.role}</p>
-                    <div className="mentor-card__details">
-                      <p>{mentor.experience}</p>
-                      <p>{mentor.education}</p>
                     </div>
+                  </div>
+                  <div className="mentor-card__content">
+                      <p>{mentor.experience}</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -193,6 +193,7 @@ const MentorSwiper = () => {
 };
 
 export default MentorSwiper;
+
 
 
 
