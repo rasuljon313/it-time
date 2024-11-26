@@ -9,7 +9,7 @@ const New = () => {
     <>
     <div className="news">
         <div className="container">
-          <h2>It Time Academy yangiliklari</h2>
+          <h2>{t("it_news")}</h2>
           <div className="news_wrapper">
             <div className="news_card">
               <img src={news1} alt="" />
