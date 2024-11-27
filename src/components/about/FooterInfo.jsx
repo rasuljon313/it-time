@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
-
+import toast from "react-hot-toast"
 const FooterInfo = () => {
   const { t } = useTranslation();
   const [formState, setFormState] = useState({
@@ -42,6 +42,7 @@ const FooterInfo = () => {
           chose: "",
           phone: "+998 ",
         });
+        toast.success("Yuborildi")
       })
       .catch((error) => {
         console.log("Error sending message:", error);
