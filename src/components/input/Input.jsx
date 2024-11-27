@@ -45,7 +45,6 @@ const Input = ({ activ, setActiv }) => {
         });
 
         setActiv(false);
-        console.log("ketti");
         toast.success("Yuborildi")
       })
       .catch((error) => {

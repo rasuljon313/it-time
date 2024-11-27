@@ -5,6 +5,7 @@ import MentorSwiper from "./Swiper";
 import img1 from "../../assets/images/banner.png"
 import img2 from "../../assets/images/u2.png"
 import img3 from "../../assets/images/u3.png"
+import toast from "react-hot-toast"
 
 const InputGroup = () => {
     
@@ -44,6 +45,7 @@ const InputGroup = () => {
           name: "",
           phone: "+998 ",
         });
+        toast.success("Yuborildi")
       })
       .catch((error) => {
         console.log("Error sending message:", error);
