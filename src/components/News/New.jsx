@@ -14,17 +14,17 @@ const New = () => {
             <div className="news_card">
               <img src={news1} alt="" />
               <h3>{t("taqdirlash")}</h3>
-              <p>t{t("xulosa")}</p>
+              <p>{t("xulosa")}</p>
             </div>
             <div className="news_card">
             <img src={news2} alt="" />
               <h3>{t("taqdirlash")}</h3>
-              <p>t{t("xulosa")}</p>
+              <p>{t("xulosa")}</p>
             </div>
             <div className="news_card">
               <img src={news3} alt="" />
               <h3>{t("game")}</h3>
-              <p>t{t("footbal")}</p></div>
+              <p>{t("footbal")}</p></div>
           </div>
         </div>
     </div>
