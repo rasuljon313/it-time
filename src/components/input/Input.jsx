@@ -46,7 +46,7 @@ const Input = ({ activ, setActiv }) => {
 
         setActiv(false);
         console.log("ketti");
-        toast.success('Successfully toasted!')
+        toast.success("Yuborildi")
       })
       .catch((error) => {
         console.log("Error sending message:", error);
