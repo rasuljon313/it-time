@@ -5,11 +5,17 @@ import face from "../../assets/images/facebook.png"
 import telegram from "../../assets/images/telegram.png"
 import you from "../../assets/images/youtube.png"
 import { useTranslation } from "react-i18next"
+import { useState } from "react"
+import Input from "../input/Input"
 const Footerbottom = () => {
+    const [activ, setActiv] = useState(false); 
     const { t } = useTranslation(); 
+    const handleButtonClick = () => {
+        setActiv(true);  
+      };
   return (
     <>
-
+  <Input activ={activ} setActiv={setActiv} />
      <div className="footerbottom">
         <div className="container">
             <div className="footerbottom_box">
@@ -29,9 +35,9 @@ const Footerbottom = () => {
                         </NavLink>
                         </li>
                     <li >
-                        <NavLink className="footerbottom_item" to="/info">
+                        <div className="footerbottom_item" onClick={handleButtonClick} >
                         {t("booking")}
-                        </NavLink>
+                        </div>
                         </li>
                 </ul>
                 <div className="footerbottom_cards" data-aos="flip-up" >

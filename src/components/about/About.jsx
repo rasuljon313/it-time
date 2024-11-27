@@ -44,7 +44,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Other sections */}
       <Explain />
       <Students />
       <Informations />

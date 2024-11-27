@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import axios from "axios";
 import PropTypes from "prop-types";
-
+import toast from "react-hot-toast"
 const Input = ({ activ, setActiv }) => {
   const [formState, setFormState] = useState({
     name: "",
@@ -45,6 +45,8 @@ const Input = ({ activ, setActiv }) => {
         });
 
         setActiv(false);
+        console.log("ketti");
+        toast.success('Successfully toasted!')
       })
       .catch((error) => {
         console.log("Error sending message:", error);
@@ -135,4 +137,3 @@ Input.propTypes = {
 };
 
 export default Input;
-
