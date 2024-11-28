@@ -4,10 +4,14 @@ import logo from "../../assets/images/LOGO6666-B-CaV6E4.png"
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { obj } from "./Data";
+import { useEffect } from "react";
 
     
 const CousId = () => {
     const { t } = useTranslation(); 
+    useEffect(() => {
+        window.scrollTo(0, 0); // Sahifani yuqoriga siljitadi
+    }, []);
 
 const param = useParams()
 const car = obj.find(car=>car.id == param.id)
