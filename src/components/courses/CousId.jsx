@@ -1,22 +1,23 @@
-
 import logo from "../../assets/images/LOGO6666-B-CaV6E4.png"
-
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { obj } from "./Data";
-import { useEffect } from "react";
-
-    
+import { useEffect, useState } from "react";
+import Input from "../input/Input";
+   
 const CousId = () => {
+    const [activ, setActiv] = useState(false); 
     const { t } = useTranslation(); 
     useEffect(() => {
-        window.scrollTo(0, 0); // Sahifani yuqoriga siljitadi
+        window.scrollTo(0, 0);
     }, []);
 
 const param = useParams()
 const car = obj.find(car=>car.id == param.id)
 console.log(car);
-
+const handleButtonClick = () => {
+    setActiv(true);  
+  };
     
   return (
 <>
@@ -47,8 +48,7 @@ console.log(car);
                     <div className="obj_payment">
                         <p>{t("muddatli_tolov")}</p>
                         <h3>{car.credit}</h3>
-                        <button>{t("muddatli_tolov")}</button>
-                        <span>{t("tolov_shartlar")}</span>
+                        <button onClick={handleButtonClick}>{t("muddatli_tolov")}</button>
                     </div>
                     <div className="obj_courses">
                         <a href="/">
@@ -63,6 +63,7 @@ console.log(car);
         </div>
     </div>
 </div>
+<Input activ={activ} setActiv={setActiv} />
 </>
   )
 }

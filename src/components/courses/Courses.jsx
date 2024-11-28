@@ -1,6 +1,5 @@
 import clock from "../../assets/images/download.svg";
 import { Link } from "react-router-dom";
-      
 import { useTranslation } from "react-i18next";
 import { obj } from "./Data";
 import i18next from "i18next";

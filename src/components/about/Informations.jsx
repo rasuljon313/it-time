@@ -31,7 +31,7 @@ const Informations = () => {
     {
         id:3,
       img: { mob: front },
-      name: "Mobilografiya",
+      name: "Frontend Internship",
       price: `4 837 000 ${t("sum")}`,
       time: `3 ${t("month")}`,
     },
