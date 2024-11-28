@@ -25,7 +25,7 @@ import mobimg from "../../assets/images/mobilografiya-A__rrbYZ.png";
     {
         id: 3,
         img: { mob: front },
-        name: "Mobilografiya",
+        name: "Frontend Internship",
         price: `4 837 000`,
         time: `3`,
     },
