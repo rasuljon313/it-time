@@ -43,7 +43,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
       <Explain />
       <Students />
       <Informations />
